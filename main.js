@@ -238,3 +238,11 @@ document
 
     let sentence = words.reduce((currWord, nextWord) => currWord += ` ${nextWord}`);
     console.log(sentence);
+
+    // BIG SPENDERS
+
+    // Array to contain all the big spenders
+const bigSpenders = businesses.filter(business => {
+  return business.orders.find(order => order > 9000);
+});
+console.log(bigSpenders);
